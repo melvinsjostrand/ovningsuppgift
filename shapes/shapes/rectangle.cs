@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    internal class rectangle : shape
+  internal class Rectangle : Shape
     {
-        
+            protected float Width;
+            protected float Height;
 
-        public rectangle(float width, float height) : base(width, height)
+        public Rectangle(float width, float height) : base(width, height)
         {
         }
-        public float Area()
+        public override float Area()
         {
-            float RecArea = Width * Height;
-            return RecArea;
+            float Area = Width * Height;
+            return Area;
         }
-        public float Circumference()
+        public override float Circumference()
         {
             float Circumference = (Width + Height) * 2;
             return Circumference;

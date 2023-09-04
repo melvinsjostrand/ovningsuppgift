@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    internal class shape 
+    public abstract class Shape 
     {
         protected float width;
         protected float height;
 
 
-        public shape(float width, float height)
+        public Shape(float width, float height)
         { 
             this.width = width;
             this.height = height;
 
 
         }
-        public float Height { get { return height; } }
-        public float Width { get { return width; } }
+        public abstract float Area();
+        public abstract float Circumference();
     }
 }

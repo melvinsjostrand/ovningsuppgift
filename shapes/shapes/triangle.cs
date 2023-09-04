@@ -6,22 +6,26 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    internal class triangle : shape
+    internal class Triangle : Shape
     {
-        public triangle(float width, float height) : base (width , height  )
+
+            protected float Width;
+            protected float Height;
+        public Triangle(float width, float height) : base (width , height  )
         {   
         }
 
-        public float Circumference()
+      
+        public override float Circumference()
         {
             float Circumference = (width + height + (float)Math.Sqrt((double)(width * width) + (double)(height * height)));
             return Circumference;
         }
 
-        public float Area()
+         public override float Area()
         {
-            float area = (width * height) / 2;
-            return area;
+            float Area = (width * height) / 2;
+            return Area;
         }
     }
 }
