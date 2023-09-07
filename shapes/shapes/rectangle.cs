@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-  internal class rectangle : shape
+    internal class rectangle : shape
     {
 
         public rectangle(float width, float height) : base(width, height)
