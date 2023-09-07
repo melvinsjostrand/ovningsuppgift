@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    internal class rectangle : shape
+    internal class Rectangle : Shape
     {
 
-        public rectangle(float width, float height) : base(width, height)
+        public Rectangle(float width, float height) : base(width, height)
         {
         }
         public override float Area()

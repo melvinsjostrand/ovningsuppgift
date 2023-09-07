@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    internal class Triangle : shape
+    internal class Triangle : Shape
     {
 
 

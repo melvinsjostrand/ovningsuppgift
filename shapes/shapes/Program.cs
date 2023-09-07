@@ -13,7 +13,7 @@ Console.WriteLine("skriv en höjd");
 float height = float.Parse(Console.ReadLine());
 Console.WriteLine("skriv en bredd");
 float width = float.Parse(Console.ReadLine());
-shape s = null;
+Shape s = null;
 int val = 1;
 while (val != 0)
 {
@@ -29,7 +29,7 @@ while (val != 0)
     else if (val == 2)
     {
 
-        s = new rectangle(width, height);
+        s = new shapes.Rectangle(width, height);
 
     }
     else
