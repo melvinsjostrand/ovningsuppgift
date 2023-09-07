@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace shapes
 {
-    internal class Triangle : Shape
+    internal class Triangle : shape
     {
 
-            protected float Width;
-            protected float Height;
+
         public Triangle(float width, float height) : base (width , height  )
         {   
         }
